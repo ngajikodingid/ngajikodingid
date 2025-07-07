@@ -1,27 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Embedded Airtable</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Santrilogy - Belajar Jadi Seru!</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+  </style>
 </head>
-<body>
-    <div class="iframe-container">
-        <iframe id="airtable-iframe" class="airtable-embed" src="https://airtable.com/embed/appXImzzYTjOiQs8j/shrbbEtEKSDz3XEyU" frameborder="0" style="background: transparent; border: 1px solid #ccc;"></iframe>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-blue-600">Santrilogy</h1>
+      <nav class="space-x-4 hidden md:flex">
+        <a href="#" class="text-gray-700 hover:text-blue-600">Beranda</a>
+        <a href="#kelas" class="text-gray-700 hover:text-blue-600">Kelas</a>
+        <a href="#" class="text-gray-700 hover:text-blue-600">Tentang</a>
+        <a href="#" class="text-gray-700 hover:text-blue-600">Masuk</a>
+      </nav>
     </div>
-    <div class="nav-bar">
-        <a onclick="changeIframe('https://airtable.com/embed/appXImzzYTjOiQs8j/shrbbEtEKSDz3XEyU')">
-            <i class="fas fa-clipboard-list"></i>
-            <span>Status Pembayaran</span>
-        </a>
-        <a onclick="changeIframe('https://airtable.com/embed/appWas0faYVmss7LL/paggDdj0aMMKiuc8R/form')">
-            <i class="fas fa-check-circle"></i>
-            <span>Konfirmasi Pembayaran</span>
-        </a>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-blue-600 text-white py-20 px-6 text-center">
+    <h2 class="text-4xl md:text-5xl font-bold mb-4">Belajar Jadi Lebih Mudah dan Menyenangkan</h2>
+    <p class="text-lg mb-6">Platform belajar online ala pesantren modern dengan sistem misi dan tantangan!</p>
+    <a href="#kelas" class="bg-white text-blue-600 font-semibold px-6 py-3 rounded-full shadow hover:bg-gray-100">Mulai Belajar</a>
+  </section>
+
+  <!-- Kelas Pilihan -->
+  <section id="kelas" class="max-w-7xl mx-auto px-4 py-12">
+    <div class="text-center mb-10">
+      <h3 class="text-2xl font-bold text-gray-800">Kelas Pilihan</h3>
+      <p class="text-gray-600">Pilih kelas favoritmu dan mulai petualangan ilmumu!</p>
     </div>
-    <script src="script.js"></script>
+
+    <div class="grid gap-6 md:grid-cols-3 sm:grid-cols-2">
+      <!-- Card 1 -->
+      <div class="bg-white rounded-2xl shadow-md p-5 hover:shadow-lg transition">
+        <h4 class="text-xl font-semibold mb-2">Nahwu Dasar</h4>
+        <p class="text-sm text-gray-600 mb-4">Belajar kaidah bahasa Arab dengan mudah dan menyenangkan.</p>
+        <a href="#" class="text-blue-600 font-semibold">Lihat Kelas →</a>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white rounded-2xl shadow-md p-5 hover:shadow-lg transition">
+        <h4 class="text-xl font-semibold mb-2">Tafsir Al-Qur'an</h4>
+        <p class="text-sm text-gray-600 mb-4">Pahami makna ayat-ayat Al-Qur'an dari ulama salaf.</p>
+        <a href="#" class="text-blue-600 font-semibold">Lihat Kelas →</a>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white rounded-2xl shadow-md p-5 hover:shadow-lg transition">
+        <h4 class="text-xl font-semibold mb-2">Fiqih Ibadah</h4>
+        <p class="text-sm text-gray-600 mb-4">Panduan lengkap praktik ibadah sesuai madzhab Syafi'i.</p>
+        <a href="#" class="text-blue-600 font-semibold">Lihat Kelas →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t mt-12">
+    <div class="max-w-7xl mx-auto px-4 py-6 text-center text-gray-600 text-sm">
+      &copy; 2025 Santrilogy. Semua Hak Dilindungi.
+    </div>
+  </footer>
+
 </body>
 </html>
